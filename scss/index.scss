@@ -1,0 +1,799 @@
+@mixin moveupeffect()
+{
+    position: relative;
+    bottom: 0;
+    transition: 0.4s ease;
+    &:hover 
+    {
+        bottom: 5px;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$brand:#0077B9;
+$shadow: 0 0 30px 17px #c9c9c97d;
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-size: 1.6rem;
+   
+}
+a,a:hover
+{
+    text-decoration: none;
+    color: black;
+}
+.container 
+{
+    width: 80%;
+   margin: 0 auto;
+}
+.list 
+{
+    position: relative;
+    div 
+    {
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 0.2rem;
+        background-color: $brand;
+    }
+
+}
+.animate1 
+{
+    animation:animate1 0.4s linear forwards;
+}
+
+.animate2 
+{
+    animation:animate2 0.4s linear forwards;
+}
+@keyframes animate1 
+{
+    
+    100% 
+    {
+        width: 100%;
+    }
+}
+@keyframes animate2 
+{
+    0% 
+    {
+        width: 100%;
+    }
+    100% 
+    {
+        width: 0%;
+    }
+}
+// loader
+#loader 
+{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url('https://i.pinimg.com/originals/c8/a1/76/c8a1765ffc8243f3a7b176c0ca84c3c1.gif');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 99999999999999;
+    transition: 5s ease-in;
+}
+// header starts
+header 
+{
+    position: relative;
+    height: 55rem;
+    overflow: hidden;
+    .stickyy
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99999;
+        background: $brand;
+        transition: 0.5s ease-in-out;
+        background: white;
+         box-shadow: 0 10px 10px rgba(117, 117, 117, 0.534); ;
+    }
+    .swipemenu 
+    {
+        right: 0!important;
+    }
+    video 
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .container
+    {
+        position: relative;
+        .header_logo 
+        {
+            padding: 1.4rem 0;
+            img 
+            {
+                width: 16rem;
+                transition: 0.1s;
+            }
+            .dark-logo 
+            {
+                display: none;
+            }
+        }
+        .header_nav
+        {
+            button 
+            {
+                padding:1rem ;
+                border: none;
+                i 
+                {
+                    font-size: 2rem;
+                }
+            }
+            .mb-lg-0
+            {
+                
+                li 
+                {
+                    list-style: none;
+                    display: inline-block;
+                    padding: 3rem 2.4rem ;
+                    position: relative;
+                    a 
+                    {
+                        color: white;
+                        font-weight: 500;
+                        font-size: 1.7rem;
+                    }
+                }
+                .menu 
+                {
+                    .submenu 
+                    {
+                        position: absolute;
+                        top: 100%;
+                        background:white;
+                        display: flex;
+                        flex-flow: column;
+                        z-index:9999999999999;
+                        padding: 2rem 0; 
+                        border-radius: 0 0 1rem 1rem;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: 1s ease-in-out;
+                        li 
+                        {
+                            padding: 0.5rem 3rem;
+                            min-width: 24rem;
+                            a 
+                            {
+                                font-size: 1.6rem;
+                                font-weight: 400;
+                                color: black;
+                            }
+                        } 
+                    }
+                    &:hover 
+                    {
+                        .submenu 
+                        {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+            #mobile-navigation 
+            {
+                position: fixed;
+                top: 0;
+                right: -410px;
+                bottom:0;
+                z-index: 99999;
+                transition: 1s ease-in-out;
+                    background: white;
+                    width: 40rem;
+                    .row
+                    {
+                        &:nth-child(1) 
+                        {
+                            background: white;
+                            padding:1.5rem 0;
+                            .col-10
+                            {
+                                figure 
+                                {
+                                    padding: 0 1.5rem;
+                                    margin: 0;
+                                }
+                            }
+                            .col-2 
+                            {
+                                padding: 0 1.5rem;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center; 
+                                i 
+                                {
+                                    font-size: 3rem;
+                                }
+                            }
+                        }
+                        &:nth-child(2)
+                        {
+                            background: $brand;
+                            height: 100%;
+                            .menu 
+                            {
+                                padding: 2rem 4rem 10rem 4rem;
+                                height: 100%;
+                                input 
+                                {
+                                    color: white;
+                                }
+                                input:checked:before 
+                                {
+                                    content:'\f106';
+                                    font-family: "Font Awesome 5 Free"; 
+                                    font-weight: 900; 
+                                }
+                                li 
+                                {
+                                    padding: 1.8rem 0;
+                                    list-style: none;
+                                    font-size: 1.6rem;
+                                    font-weight: 500;
+                                    color: white;
+                                    #menu1,#menu2 
+                                    {
+                                        appearance:none
+                                    }
+                                    .submenu 
+                                    {
+                                        display: none;
+                                        padding: 1.2rem 0 1rem 1.4rem;
+                                        li 
+                                        {
+                                            padding: 1rem 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+         
+            }
+        }
+    }
+    .header_text 
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 9999;
+        transform: translate(-50%,-50%);
+        color: white;
+        h1
+        {
+            font-size: 4.8rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+        }
+        p 
+        {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+}
+// services starts
+.services 
+{
+    padding: 8rem 0;
+    .container 
+    {
+        .title 
+        {
+            h1 
+            {
+                font-size: 4rem;
+                font-weight: 700;
+            }
+            .typingeffect
+            {
+                span 
+                {
+                    font-size: 4rem;
+                    font-weight: 700;
+                }
+                #typed
+                {
+                    font-size: 4rem;
+                    font-style: italic;
+                    font-weight: 700;
+                    color: $brand;
+                }
+                .typed-cursor
+                {
+                    opacity: 0;
+                    display: none;
+                }
+                #typed::after
+                {
+                    content: '।';
+                    color: black;
+                    font-style: normal!important;
+                    display: inline;
+                    animation: blink 0.7s infinite
+                }
+                @keyframes blink {
+                    0%
+                    {
+                       opacity: 1;   
+                    }
+                    50%
+                    {
+                       opacity: 0;   
+                    }
+                    100%
+                    {
+                       opacity: 1;   
+                    }
+                }
+            }
+        }
+        .row 
+        {
+            .col-lg-4 
+            {
+                margin-top: 6rem;
+                padding: 0 3rem;
+                .img_box_wrap
+                {
+                    padding: 3rem 3.8rem;
+                    &:hover 
+                    {
+                        box-shadow: $shadow;
+                    }
+                    @include moveupeffect();
+                    .image 
+                    {
+                        margin-right: 3rem;
+                        width: 6rem;
+                        img 
+                        {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .slogan
+        {
+            margin-top: 6rem;
+            padding-top: 3rem;
+            font-size: 1.8rem;
+            font-weight: 500;
+            span 
+            {
+                a 
+                {
+                    color: $brand;
+                }
+            }
+        }
+    }
+}
+// description starts
+.description 
+{
+    padding: 8rem 0;
+    .container 
+    {
+        .row 
+        {
+            .col-lg-6
+            {
+                &:nth-child(1) 
+                {
+                    text-align: justify;
+                    h4 
+                    {
+                            font-size: 1.4rem;
+                            letter-spacing: 3px;
+                    }
+                    .content 
+                    {
+                        h2 
+                        {
+                            font-size: 3.4rem;
+                            font-weight: 500;
+                            span 
+                            {
+                                color: $brand;
+                            }
+                        }
+                        p 
+                        {
+                            margin-top: 2rem;
+                            margin-bottom: 1.6rem;
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .subcontent 
+                    {
+                        h4 
+                        {
+                            font-size: 2.4rem;
+                            font-weight: 500;
+                            color: $brand;
+                            letter-spacing:0px;
+                        }
+                        p 
+                        {
+                            font-size: 1.5rem;
+                            margin-bottom: 1.6rem;
+                            span 
+                            {
+                                text-decoration: underline;
+                                a 
+                                {
+                                    color: $brand;
+                                }
+                            }
+                        }
+                    }
+                    .button 
+                    {
+                        margin-top: 3rem;
+                        padding: 2rem 3.6rem;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        background: $brand;
+                        display: inline-block;
+                        color: white;
+                        border-radius: 0.5rem;
+                        @include moveupeffect();
+                    }
+                }
+            }
+        }
+    }
+}
+// clients start
+.clients 
+{
+    padding: 8rem 0;
+    .container 
+    {
+        .title 
+        {
+            h1 
+            {
+                font-size: 3.4rem;
+                font-weight: 500;
+                span 
+                {
+                    color: $brand;
+                }
+            }
+            margin-bottom: 5rem;
+        }
+        .owl-carousel1
+        {
+            
+                
+                padding: 2.5rem;
+                box-shadow:0 -10px 15px #0000003b, 10px 0 15px #0000003b, -10px 0 15px #0000003b;
+                .owl-dots 
+                {
+                    .owl-dot.active 
+                    {
+                        span 
+                        {
+                            width: 3rem;
+                            padding-right: 1rem;
+                       
+                        }
+                    }
+                }
+                .button 
+                {
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    color: white;
+                    background: $brand;
+                    padding: 2rem;
+                    width: 13rem;
+                    border-radius: 3rem;
+                }
+
+                .content 
+                {
+                    .image 
+                    {
+                        position: relative;
+                        width: 45rem;
+                        height: 30rem;
+                        img
+                        {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    h2 
+                    {
+                        font-size: 3rem;
+                        font-weight: 600;
+                        color: $brand;
+                        margin-bottom: 2rem;
+                    }
+                    .text 
+                    {
+                        font-size: 1.7rem;
+                        margin-bottom: 3rem;
+                    }
+                        .subcontent 
+                        {
+                            display: flex;
+                            flex-flow: column;
+                            justify-content: center;
+                            padding: 3rem;
+                        }
+                }
+            
+        }
+        .owl-carousel2 
+        {
+            background: white;
+            border-top: 1px solid rgb(204, 204, 204);
+            figure 
+            {
+                position: relative;
+                &:before 
+                {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    content: '';
+                    transition: 1s ease-in-out;
+                }
+                &:hover::before
+                {
+                    background: rgba($color: white, $alpha: 0.5);
+                }
+            }
+        }
+    }
+}
+// sectors start
+.sectors 
+{
+    padding: 8rem 0;
+    .container 
+    {
+        .title 
+        {
+            margin-bottom: 3rem;
+            h1 
+            {
+                font-size: 3.4rem;
+                font-weight: 500; 
+                span
+                {
+                    color: $brand;
+                }
+            }
+        }
+        .icons 
+        {
+            .row 
+            {
+                .col-6
+                {
+                    padding: 2.5rem;
+                    border: 1px solid #eee;
+                    @include moveupeffect();
+                    &:hover 
+                    {
+                        box-shadow: $shadow;
+                    }
+                    .content 
+                    {
+                        .icon 
+                        {
+                            
+                            width: 100%;
+                            height: 100%;
+                            margin-bottom: 2rem;
+                            a 
+                            {
+                                img 
+                                {
+                                    height: 5.5rem;
+                                    width: 5.5rem;
+                                    color: $brand;
+                                }
+                            }
+                        }
+                        .subcontent 
+                        {
+                            margin-bottom: 1.2rem;
+                            a 
+                            {
+                                font-size: 1.8rem;
+                                font-weight: 500;
+                                color: $brand;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// footer starts
+footer 
+{
+    .htop 
+    {
+        color: white;
+        background: url("https://www.cyberlink.com.np/themes-assets/images/patterns/call-to-action-image-global.png"),#454545;
+        background-repeat: no-repeat;
+        background-position: top 35% right -68px;
+        .container
+        {
+            padding: 8rem 0;
+            h1 
+            {
+                font-size: 4rem;
+                font-weight: 500;
+                margin-bottom: 2rem;
+                span
+                {
+                    color: $brand;
+                }
+            }
+            p 
+            {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .hmiddle 
+    {
+        background: #3D4143;
+        .container 
+        {
+            padding: 6rem 0;
+            color: white;
+            h4 
+            {
+                border-left: solid 0.5rem $brand;
+                padding-left: 1rem;
+                margin-bottom: 2rem;
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+            ul 
+            {
+                padding: 0;
+                li 
+                {
+                    list-style: none;
+                    margin-bottom: 1rem;
+                    a 
+                    {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .hbottom 
+    {
+        padding: 1rem 0;
+        background: $brand;
+        color: white;
+        .container 
+        {
+            .row
+            {
+                .col-md-6 
+                {
+                    &:nth-child(2)
+                    {
+                        ul 
+                        {
+                            padding: 1rem 0;
+                            margin: 0;
+                            li 
+                            {
+                                padding-left: 1rem;
+                                a 
+                                {
+                                    color: white;
+                                    i 
+                                    {
+                                        font-size: 2rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// go to top
+.goTop
+{
+    position: fixed;
+    background: $brand;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    font-size: 2rem;
+    z-index: 9999;
+    opacity: 0;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    i
+    {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        color: white;
+    }
+}
+@media only screen and (max-width: 1199px)
+{
+    html 
+    {
+        font-size: 50%;
+    }
+}
+@media only screen and (max-width: 767px)
+{
+    html 
+    {
+        font-size: 50%;
+    }
+    .container 
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 575px)
+{
+    html 
+    {
+        font-size: 40%;
+    }
+}

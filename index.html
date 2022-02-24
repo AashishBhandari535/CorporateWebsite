@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://s3.amazonaws.com/myadvobuck/static/libs/typed.min.js"></script>
+    <title>Web Designing Solutions</title>
+  </head>
+  <body onload="loading()">
+    <!-- header starts -->
+    <div id="loader">  
+    </div>
+    <header>
+      <video autoplay loop muted>
+        <source src="https://cyberlink.com.np/themes-assets/Person_Typing_Fast.mp4" type="video/mp4">
+      </video>
+        <div id="head">
+          <div class="container d-flex justify-content-between">
+            <div class="header_logo">
+                <img src="	https://www.cyberlink.com.np/themes-assets/images/logo/light-logo.png" alt="logo " class="img-fluid light-logo">
+                <img src="https://www.cyberlink.com.np/themes-assets/images/logo/dark-logo.png" alt="logo" class="img-fluid dark-logo">
+            </div>
+            <div class="header_nav d-flex">
+                <nav class="navbar navbar-expand-lg navbar-light p-0 "> 
+                      <button class="navbar-toggler d-block d-xl-none" type="button" id="press" >
+                        <i class="fas fa-bars"></i>
+                      </button>
+                      <div class="desktop-header d-none d-xl-block">
+                        <ul class=" mb-lg-0">
+                            <li class="list" onmouseenter="bordereffect1(this)" onmouseleave="bordereffect2(this)"><a href="#"> Home</a><div></div></li>
+                            <li class="menu list" onmouseenter="bordereffect1(this)" onmouseleave="bordereffect2(this)"><a href="#">Company <i class="fas fa-angle-down"></i></a><div></div>
+                              <ul  class="submenu list" onmouseenter="bordereffect1(this)" onmouseleave="bordereffect2(this)">
+                                <li><a href="#"> About Us</a></li>
+                                <li><a href="#"> FAQs</a></li>
+                                <li><a href="#"> Blog</a></li>
+                                <div></div>
+                              </ul>
+                            </li>
+                            <li class="list" onmouseenter="bordereffect1(this)" onmouseleave="bordereffect2(this)"><a href="#">Our Works</a><div></div></li>
+                            <li class="list" onmouseenter="bordereffect1(this)" onmouseleave="bordereffect2(this)"><a href="#">Services & Solutions</a><div></div></li>
+                            <li class="list" onmouseenter="bordereffect1(this)" onmouseleave="bordereffect2(this)"><a href="#">Contact</a><div></div></li>
+                        </ul>
+                      </div>
+                      <div id="mobile-navigation">
+                          <div class="row ">
+                            <div class="col-10">
+                              <figure>
+                                <a href="#">
+                                    <img src="https://www.cyberlink.com.np/themes-assets/images/logo/dark-logo.png" class="img-fluid">
+                                </a>
+                              </figure>
+                            </div>
+                            <div class="col-2"> 
+                              <i class="fas fa-times" id="cancel"></i>  
+                            </div>
+                          </div>
+                          <div class="row ">
+                            <ul class="menu">
+                              <li>
+                                <div class="head d-flex justify-content-between align-items-center">Company<input type="checkbox" class="fas fa-angle-down" id="menu1" onclick="check('menu1','submenu1')"></div>
+                                <ul class="submenu" id="submenu1">
+                                  <li>About Us</li>
+                                  <li>FAQs</li>
+                                  <li>Blog</li>
+                                </ul>
+                              </li>
+                              <li>Our Works</li>
+                              <li>
+                                <div class="head d-flex justify-content-between align-items-center">Services & Solutions <input type="checkbox" class="fas fa-angle-down" id="menu2" onclick="check('menu2','submenu2')"></div>
+                                <ul class="submenu" id="submenu2">
+                                  <li>About Us</li>
+                                  <li>FAQs</li>
+                                  <li>Blog</li>
+                              </li>
+                              <li>Contact</li>
+                          </ul>
+                          </div>
+                        
+                      </div>
+                  </nav>
+            </div>
+        </div>
+        </div>
+        <div class="header_text text-center">
+          <h1>TRUSTED COMPANY SINCE 2002</h1>
+          <p >One stop shop for all web related services</p>
+        </div>
+    </header>
+    <!-- services starts -->
+    <section class="services">
+      <div class="container">
+        <div class="title text-center">
+          <h1 class="m-0">Providing Successful Web Services Since</h1>
+          <div class="typingeffect d-flex justify-content-center">
+            <span>2002&nbsp;&nbsp;</span>
+            <div id="typed-strings">
+              <p>EnterPrise Email Service</p>
+              <p>Domain & Hosting </p>
+              <p>Ecommerce Solution</p>
+              <p>Website Design</p>
+            </div>
+            <span id="typed"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="img_box_wrap d-flex justify-content-center">
+              <div class="image">
+                <img src="https://www.cyberlink.com.np/uploads/medium/business-sbkYz3UL8n5Eg2mJjsROf5CjmMaMHUcbMwzJiaqF.svg" alt="Business Wensite">
+              </div>
+              <div class="content d-flex align-items-center">
+                Business Website
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="img_box_wrap d-flex justify-content-center">
+              <div class="image">
+                <img src="https://www.cyberlink.com.np/uploads/medium/ecommerce-pNsc0mx92SjN53UsBoqriIATAGwrk1PJdFYC18uo.svg" alt="Business Wensite">
+              </div>
+              <div class="content d-flex align-items-center">
+                Business Website
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="img_box_wrap d-flex justify-content-center">
+              <div class="image">
+                <img src="https://www.cyberlink.com.np/uploads/medium/app-development-4YiGTaK5QOuWNpEk59ollBSYFpscyG9yMOOstYTp.svg" alt="Business Wensite">
+              </div>
+              <div class="content d-flex align-items-center">
+                Business Website
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="img_box_wrap d-flex justify-content-center">
+              <div class="image">
+                <img src="https://www.cyberlink.com.np/uploads/medium/enterprise-email-1HeUBNhFz10cQEF9DSAp88atTbhxOTXGFn5XUuPJ.svg" alt="Business Wensite">
+              </div>
+              <div class="content d-flex align-items-center">
+                Business Website
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="img_box_wrap d-flex justify-content-center">
+              <div class="image">
+                <img src="https://www.cyberlink.com.np/uploads/medium/bank-QagWrsBBJw5u9llSi2NmM27Hs43emWamMevNzII4.svg" alt="Business Wensite">
+              </div>
+              <div class="content d-flex align-items-center">
+                Business Website
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="img_box_wrap d-flex justify-content-center">
+              <div class="image">
+                <img src="https://www.cyberlink.com.np/uploads/medium/facebook-marketing-pm86fsQzLCiEBnPKSXx4edB0fKdjXqtknGlFw9Nf.svg" alt="Business Wensite">
+              </div>
+              <div class="content d-flex align-items-center">
+                Business Website
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="slogan text-center">
+          Better Design. Better Service. <span><a href="#">View more services</a> </span>
+        </div>
+      </div>
+    </section>
+    <!-- company description -->
+    <section class="description">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>OUR COMPANY</h4>
+            <div class="content">
+                <h2><span> We are the team</span> you're looking for</h2>
+                <p>Cyberlink (P) Ltd, a web development company of Nepal, started operations in 2002. Cyberlink is incorporated with the objective of extending international standard modern IT solutions and services to various sectors of society. Pursuing its objective, Cyberlink provides a full range of commercial IT products and services.</p>
+            </div>
+            <div class="subcontent">
+              <h4>How do we do it?</h4>
+              <p><span><a href="#"> #We do not just create websites</a></span>. We optimize the experience of your user. We plan, design, and deploy digital experiences that nurture your brand identity and grow your audience. So, your website is elegant but multi-functional. That’s what you get with Cyberlink’s services.</p>
+            </div>
+            <a href="#"><div class="button"> Learn more</div></a>
+          </div>
+          <div class="col-lg-6">
+            <img src="https://www.cyberlink.com.np/uploads/original/aboutus-ixpQAWmxObPW1kGh1T7HtyRwYK2oweZ1HbnK2E3i.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- clients -->
+    <section class="clients">
+      <div class="container">
+        <div class="title text-center">
+          <h1>We Make Products <span> People Love</span></h1>
+        </div>
+        <div class="row owl-carousel1 owl-carousel owl-theme ">
+            <div class="content align-items-center d-flex flex-lg-row flex-column" >
+              <div class="image">
+                <img src="https://www.cyberlink.com.np/uploads/medium/progressive-fIwG8dk6Itu7WiAaIcPEOJYsOyUpEq73lGlzrtyA.png" >
+              </div>
+              <div class="subcontent align-items-center align-items-lg-start">
+                <h2 class="text-center text-lg-start">Progressive Educational Training Services</h2>
+                <div class="button text-center">READ MORE</div>
+              </div>
+            </div>
+            <div class="content align-items-center  d-flex flex-lg-row flex-column" >
+              <div class="image">
+                <img src="https://www.cyberlink.com.np/uploads/medium/lbb-AGI5ub37PqglBXIsUyHmA4ayQbcjbqsIjMCsiOWJ.png" >
+              </div>
+              <div class="subcontent align-items-center align-items-lg-start" >
+                <div class="code"></div>
+                <h2 class="title text-center text-lg-start">Progressive Educational Training Services</h2>
+                <div class="text text-center text-lg-start">Lumbini Bikas Bank has been an emerging name in the field of banking and financial sector of Nepal</div>
+                <div class="button text-center">READ MORE</div>
+              </div>
+            </div>
+            <div class="content align-items-center  d-flex flex-lg-row flex-column" >
+              <div class="image">
+                <img src="https://www.cyberlink.com.np/uploads/medium/lbb-AGI5ub37PqglBXIsUyHmA4ayQbcjbqsIjMCsiOWJ.png" >
+              </div>
+              <div class="subcontent align-items-center align-items-lg-start">
+                <div class="code"></div>
+                <h2 class="title text-center text-lg-start">Progressive Educational Training Services</h2>
+                <div class="text text-center text-lg-start">Lumbini Bikas Bank has been an emerging name in the field of banking and financial sector of Nepal</div>
+                <div class="button text-center">READ MORE</div>
+              </div>
+            </div>
+            <div class="content  align-items-center d-flex flex-lg-row flex-column" >
+              <div class="image">
+                <img src="https://www.cyberlink.com.np/uploads/medium/lbb-AGI5ub37PqglBXIsUyHmA4ayQbcjbqsIjMCsiOWJ.png" >
+              </div>
+              <div class="subcontent align-items-center align-items-lg-start">
+                <div class="code"></div>
+                <h2 class="title text-center text-lg-start">Progressive Educational Training Services</h2>
+                <div class="text text-center text-lg-start">Lumbini Bikas Bank has been an emerging name in the field of banking and financial sector of Nepal</div>
+                <div class="button text-center">READ MORE</div>
+              </div>
+            </div>
+            <div class="content align-items-center  d-flex flex-lg-row flex-column" >
+              <div class="image">
+                <img src="https://www.cyberlink.com.np/uploads/medium/lbb-AGI5ub37PqglBXIsUyHmA4ayQbcjbqsIjMCsiOWJ.png" >
+              </div>
+              <div class="subcontent align-items-center align-items-lg-start">
+                <div class="code"></div>
+                <h2 class="title text-center text-lg-start">Progressive Educational Training Services</h2>
+                <div class="text text-center text-lg-start">Lumbini Bikas Bank has been an emerging name in the field of banking and financial sector of Nepal</div>
+                <div class="button text-center">READ MORE</div>
+              </div>
+            </div>
+            <div class="content align-items-center  d-flex flex-lg-row flex-column" >
+              <div class="image">
+                <img src="https://www.cyberlink.com.np/uploads/medium/lbb-AGI5ub37PqglBXIsUyHmA4ayQbcjbqsIjMCsiOWJ.png" >
+              </div>
+              <div class="subcontent align-items-center align-items-lg-start">
+                <div class="code"></div>
+                <h2 class="title text-center text-lg-start">Progressive Educational Training Services</h2>
+                <div class="text text-center text-lg-start">Lumbini Bikas Bank has been an emerging name in the field of banking and financial sector of Nepal</div>
+                <div class="button text-center">READ MORE</div>
+              </div>
+            </div>
+        </div>
+        <div class="row owl-carousel2 owl-carousel owl-theme ">
+
+          <figure>
+            <img src="https://www.cyberlink.com.np/uploads/original/nea-HDAkXkCLcBb05gzC98F78ZfgyRbqn9mgIkHazioG.png" class="img-fluid" >
+          </figure>
+        
+          <figure>
+            <img src="https://www.cyberlink.com.np/uploads/original/muktinathcapital-Ku0hIRHQQPOGhmjppfBlNtD0LgxXrtSjEOF8X8YX.png" class="img-fluid">
+          </figure>
+
+          <figure>
+            <img src="https://www.cyberlink.com.np/uploads/original/nepal-police-KrgnubCw9dxizouqJqnF2pRLAjSNH8ufGNdWjHzf.png" class="img-fluid">
+          </figure>
+
+          <figure>
+            <img src="https://www.cyberlink.com.np/uploads/original/hav-HpjMFFibqtg9MlU0Wz0uyKMz38fQbiHf61eF1HDC.png" class="img-fluid">
+          </figure>
+
+          <figure>
+            <img src="https://www.cyberlink.com.np/uploads/original/chhatrapatihospital-G3eWw9C5JPp6Cao4QrddIIfe0Qt4F2ZWXlnxqWp8.png" class="img-fluid">
+          </figure>
+
+          <figure>
+            <img src="https://www.cyberlink.com.np/uploads/original/fskillorg-JXZAs2TqJzpqSPWusDp33xkk0ovCgNcLUYk8lmQa.png" class="img-fluid" >
+          </figure>
+
+          <figure>
+            <img src="https://www.cyberlink.com.np/uploads/original/arghakhanchibulletin-ugOkkvOSscCW85Sf30Pid1l0qCP0NQ1113V5cw2S.png" class="img-fluid" >
+          </figure>
+
+          <figure>
+            <img src="https://www.cyberlink.com.np/uploads/original/nasc-D15sPyl9QM58wxnqw0FoWtU8tDb7YkyKYwJcZ9gC.png" class="img-fluid">
+          </figure>
+
+          <figure>
+            <img src="https://www.cyberlink.com.np/uploads/original/wecan-um3CEyqJXcOAdRSMCEfANxxNfE6Tto3pnOMmDs59.png" class="img-fluid">
+          </figure>
+
+          <figure>
+            <img src="https://www.cyberlink.com.np/uploads/original/technofex-BfeLH8Ijl8OBePiBTPyK0GOW2wRRBvmZmbxEFf5h.png" class="img-fluid" >
+          </figure>
+
+          <figure>
+            <img src="https://www.cyberlink.com.np/uploads/original/ropewaycablecar-1XvhS2VJIAiugTQpZJUZxaArTtKmC8jgOM7ZsKgs.png" class="img-fluid" >
+          </figure>
+
+          <figure>
+            <img src="https://www.cyberlink.com.np/uploads/original/orientcollege-Q6M69hzJQ057oU0JzpJH2KKBteOonzPFDHLrflf0.png" >
+          </figure>
+
+        </div>
+      </div>
+    </section>
+    <!-- sectors section -->
+    <section class="sectors">
+      <div class="container">
+        <div class="title text-center">
+          <h1>We are helping the world to <span> showcase their product with confidence.</span></h1>
+        </div>
+        <div class="icons">
+          <div class="row no-gutters">
+            <div class="col-6 col-lg-4 text-center">
+              <div class="content">
+                <div class="icon">
+                  <a href="#"> <img src="https://www.cyberlink.com.np/uploads/medium/business-oKDYsJZkqsKduUjK5ShCE4jDqJ7YwpziOAABskC9.svg" ></a>
+                 </div>
+                 <div class="subcontent">
+                 <a href="#"> Business & Corporate</a> 
+                 </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 text-center">
+              <div class="content">
+                <div class="icon">
+                  <a href="#"> <img src="https://www.cyberlink.com.np/uploads/medium/hotel-Ku6i9fWB2zvyuLLz2ybuHBc52ROyvzylBI2ODvK8.svg" ></a>
+                 </div>
+                 <div class="subcontent">
+                 <a href="#"> Hotel & Travel</a> 
+                 </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 text-center">
+              <div class="content">
+                <div class="icon">
+                  <a href="#"> <img src="https://www.cyberlink.com.np/uploads/medium/bank-finance-7BEc0QAIy7L4bEMBbnPxrdAZ5Gp347FXW4PtAL8F.svg" ></a>
+                 </div>
+                 <div class="subcontent">
+                 <a href="#"> Banking & Finance</a> 
+                 </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 text-center">
+              <div class="content">
+                <div class="icon">
+                  <a href="#"> <img src="https://www.cyberlink.com.np/uploads/medium/news-magazines-SOnTqdDGjgg9pDlwzk62JFKgBWB87QkdVmq7irnz.svg" ></a>
+                 </div>
+                 <div class="subcontent">
+                 <a href="#">News & Media</a> 
+                 </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 text-center">
+              <div class="content">
+                <div class="icon">
+                  <a href="#"> <img src="https://www.cyberlink.com.np/uploads/medium/online-shop-HMGNCDCw3GJAkpOBKwWD3QoxMlh4RpWHnCtEP3dD.svg" ></a>
+                 </div>
+                 <div class="subcontent">
+                 <a href="#"> E-commerce</a> 
+                 </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 text-center">
+              <div class="content">
+                <div class="icon">
+                  <a href="#"> <img src="https://www.cyberlink.com.np/uploads/medium/education-SJnRGY3C3y1Ldu2YoTjJB9BEzVbjlaXqiAvV9EMj.svg" ></a>
+                 </div>
+                 <div class="subcontent">
+                 <a href="#"> Education</a> 
+                 </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 text-center">
+              <div class="content">
+                <div class="icon">
+                  <a href="#"> <img src="https://www.cyberlink.com.np/uploads/medium/healthcare-RO4IRdANVkJ5E2mAO1DFb1XUBxfkMVHSVlhWSObk.svg" ></a>
+                 </div>
+                 <div class="subcontent">
+                 <a href="#"> HealthCare</a> 
+                 </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 text-center">
+              <div class="content">
+                <div class="icon">
+                  <a href="#"> <img src="https://www.cyberlink.com.np/uploads/medium/manufacturer-zhdcin7cG7QTwlceUli7iihvL406MuTWK3dRE614.svg" ></a>
+                 </div>
+                 <div class="subcontent">
+                 <a href="#"> Manufacturer</a> 
+                 </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4 text-center">
+              <div class="content">
+                <div class="icon">
+                  <a href="#"> <img src="https://www.cyberlink.com.np/uploads/medium/ngo-varwrlRLyaltZBdtk3yWHPg5grojpdrn4OJrq15r.svg" ></a>
+                 </div>
+                 <div class="subcontent">
+                 <a href="#"> NGO/INGO</a> 
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+      <div class="htop">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 col-lg-7">
+              <h1>Identify your business potentials and find opportunities for <span> bigger success</span></h1>
+              <p>
+                We help you connect through your website and we design and build amazing and fully functional websites. Whether you are looking to grow your current business, sell products online or revamp your current site, we can give your business the boost it needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hmiddle">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-sm-6">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h4>SERVICES & SOLUTIONS</h4>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <ul>
+                    <li ><span class="list" onmouseenter="bordereffect1(this)" onmouseleave="bordereffect2(this)"> <a href="#"> Business Website </a><div></div></span></li>
+                    <li ><span class="list" onmouseenter="bordereffect1(this)" onmouseleave="bordereffect2(this)"><a href="#"> eCommerce Website </a><div></div></span></li>
+                    <li ><span class="list" onmouseenter="bordereffect1(this)" onmouseleave="bordereffect2(this)"><a href="#">  News Portal </a><div></div></span></li>
+                    <li ><span class="list" onmouseenter="bordereffect1(this)" onmouseleave="bordereffect2(this)"> <a href="#"> Travel and Trekking <div></div></a></span></li>
+                    <li ><span class="list" onmouseenter="bordereffect1(this)" onmouseleave="bordereffect2(this)"><a href="#"> Banking & Finance <div></div></a></span></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <ul>
+                    <li   ><span class="list" onmouseenter="bordereffect1(this)" onmouseleave="bordereffect2(this)"><a href="#"> Professional Email </a><div></div></span></li>
+                    <li   ><span class="list" onmouseenter="bordereffect1(this)" onmouseleave="bordereffect2(this)"><a href="#">Facebook Marketing </a><div></div></span></li>
+                    <li   ><span class="list" onmouseenter="bordereffect1(this)" onmouseleave="bordereffect2(this)"><a href="#">GPS Tracking System </a><div></div></span></li>
+                </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <h4>GET INCH</h4>
+              <ul>
+                <li><i class="fas fa-map-marker pe-1"></i> Lalitpur, Nepal</li>
+                <li><i class="fas fa-envelope pe-1"></i>info@cyberlink.com.np</li>
+                <li><i class="fas fa-headphones pe-1"></i>+977-9851166440</li>
+                <li><i class="fas fa-globe pe-1"></i> http://cyberlink.com.np</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hbottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6  d-flex align-items-center justify-content-md-start justify-content-center">
+              <span class="copyright-text">© 2021 Cyberlink Pvt. Ltd All Rights Reserved. </span>
+            </div>
+            <div class="col-md-6  text-md-end text-center">
+              <ul class="socialmedias list-unstyled">
+                <li class="d-inline "><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li class="d-inline "><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="d-inline "><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="d-inline "><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <!-- gototop button -->
+    <a href="#">
+      <div class="goTop">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+    </a>
+  
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/index.js"></script>
+    <script>
+
+  </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
